@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* Set Lato as the global font */
+@layer base {
+	html, body, #root {
+		font-family: 'Lato', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+		/* Prevent horizontal page scroll caused by overflowing elements (marquees, wide svgs, etc.) */
+		overflow-x: hidden;
+	}
+}
+
+@layer utilities {
+	/* Utility to hide native scrollbars across browsers */
+	.hide-scrollbar {
+		-ms-overflow-style: none; /* IE and Edge */
+		scrollbar-width: none; /* Firefox */
+	}
+	.hide-scrollbar::-webkit-scrollbar {
+		display: none; /* Chrome, Safari, Opera */
+	}
+}
+
+/* Arc rotate animation for AboutUs page */
+.arc-rotate {
+	display: inline-block;
+	animation: arc-rotate 30s linear infinite;
+}
+
+@keyframes arc-rotate {
+	from { transform: rotate(0deg); }
+	to { transform: rotate(-360deg); }
+}
+
+/* keep images upright as they orbit */
+.arc-rotate img {
+	will-change: transform;
+}
