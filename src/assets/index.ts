@@ -1,4 +1,4 @@
-import logo from './images/c134a71f95fd3d1af893e2da28fa7b4de520f131 (2).png';
+import logo from './images/nav_logo.png';
 import heroBg from './images/hero_bg.gif';
 
 import program1 from './images/a6236e678c06b1ab1ec270fac36a4afa422ff0cf.png';

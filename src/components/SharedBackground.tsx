@@ -10,11 +10,18 @@ export default function SharedBackground() {
         left: 0,
         right: 0,
         bottom: 0,
-        zIndex: -1,
+        /* place the background well beneath page content and overlays */
+        zIndex: -50,
+        /* ensure it doesn't intercept pointer/gesture events */
+        pointerEvents: 'none',
+        /* Use cover and center so it fills the viewport nicely */
         backgroundImage: `url(${images.hero.background})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
-        backgroundRepeat: 'no-repeat'
+        backgroundRepeat: 'no-repeat',
+        /* keep background stationary relative to viewport (safer on some browsers)
+           and avoid transform-based layout surprises */
+        backgroundAttachment: 'fixed'
       }}
     />
   );

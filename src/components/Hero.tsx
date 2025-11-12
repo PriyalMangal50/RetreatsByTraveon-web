@@ -31,7 +31,8 @@ export default function Hero({
   subtitleOverride?: ReactNode;
 }) {
   return (
-    <section className="relative isolate min-h-[70svh] md:min-h-[78svh] lg:min-h-[86svh] overflow-visible">
+    // prevent the hero from allowing children to overflow horizontally
+    <section className="relative isolate min-h-[70svh] md:min-h-[78svh] lg:min-h-[86svh] overflow-hidden">
       {/* Overlay to darken the shared background (SharedBackground provides the background image) */}
       <div aria-hidden className="absolute inset-0 -z-10">
         <div className="absolute bg-black" style={{ opacity: overlay }} />

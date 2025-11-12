@@ -7,6 +7,9 @@
 		font-family: 'Lato', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
 		/* Prevent horizontal page scroll caused by overflowing elements (marquees, wide svgs, etc.) */
 		overflow-x: hidden;
+		/* Disable horizontal pan gestures and overscroll on touch/trackpad devices */
+		touch-action: pan-y;
+		overscroll-behavior-x: none;
 	}
 }
 

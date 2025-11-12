@@ -78,7 +78,8 @@ export default function Testimonials() {
               {/* Floating Cards Section */}
               <div className="absolute left-1/2 top-1/2 z-20 w-full -translate-x-1/2 -translate-y-1/2">
                 <div className="max-w-7xl mx-auto px-4">
-                  <div className="overflow-visible">
+                  {/* hide overflowing animated cards so they don't create horizontal scroll */}
+                  <div className="overflow-hidden">
                     <div className="flex items-stretch gap-12 animate-scroll-testimonials w-max">
                       {loopCards.map((c, i) => (
                         <div

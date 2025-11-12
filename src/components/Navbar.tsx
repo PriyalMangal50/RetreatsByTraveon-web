@@ -1,5 +1,5 @@
 //import logoA from '../assets/images/image1.png';
-import logoB from "../assets/images/c134a71f95fd3d1af893e2da28fa7b4de520f131 (2).png";
+import logoB from "../assets/images/nav_logo.png";
 import { ChevronDown, UserCircle2 } from "lucide-react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { useEffect, useState, useRef } from "react";

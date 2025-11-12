@@ -35,7 +35,8 @@ import Blogs from "./pages/Blogs";
 
 function HomePage() {
   return (
-    <div className="min-h-screen pt-28">
+    // prevent any page-level horizontal overflow (full-bleed children, transforms, etc.)
+    <div className="min-h-screen pt-28 overflow-x-hidden">
       <SharedBackground />
       <Navbar />
       <Hero />
