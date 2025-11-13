@@ -109,7 +109,24 @@ export default function AboutUs() {
 
           <div className="about-hero">
 
-            <style>{`.about-hero .inline-flex.items-center.gap-3{display:none !important} .about-hero .absolute.bottom-0{display:none !important}`}</style>
+            <style>{`
+              .about-hero .inline-flex.items-center.gap-3{display:none !important}
+              .about-hero .absolute.bottom-0{display:none !important}
+
+              /* Ensure hero title is visible on small screens */
+              .about-hero .about-hero-title { display: inline-block; margin-top: -8px; }
+              .about-hero .about-hero-subtitle { display: block; margin-top: 12px; }
+
+              @media(min-width:640px) {
+                .about-hero .about-hero-title { margin-top: -48px; }
+                .about-hero .about-hero-subtitle { margin-top: 24px; }
+              }
+
+              @media(min-width:1024px) {
+                .about-hero .about-hero-title { margin-top: -120px; }
+                .about-hero .about-hero-subtitle { margin-top: 36px; }
+              }
+            `}</style>
 
 
             <Hero
@@ -118,7 +135,7 @@ export default function AboutUs() {
 
             titleOverride={(
 
-              <span style={{ display: 'inline-block', marginTop: '-112px' }}>
+              <span className="about-hero-title" style={{ display: 'inline-block' }}>
 
               <span className="about-title" style={{
 
@@ -179,7 +196,7 @@ export default function AboutUs() {
 
           subtitleOverride={(
 
-            <span style={{
+            <span className="about-hero-subtitle" style={{
 
               fontFamily: 'Archivo, serif',
 
@@ -192,10 +209,6 @@ export default function AboutUs() {
               lineHeight: '28px',
 
               letterSpacing: '-4%',
-
-              display: 'block',
-
-              marginTop: '-2px',
 
               textAlign: 'center',
 
