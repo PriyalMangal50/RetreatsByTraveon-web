@@ -128,7 +128,13 @@ export default function Navbar() {
         </div>
 
         <div className="md:hidden flex items-center">
-          <button onClick={() => setMobileOpen(!mobileOpen)} aria-label="Toggle menu" className="p-2 rounded-md bg-white/10 text-white">{mobileOpen ? "Close" : "Menu"}</button>
+          <button
+            onClick={() => setMobileOpen(!mobileOpen)}
+            aria-label="Toggle menu"
+            className={`p-2 rounded-md transition-colors duration-150 focus:outline-none ${activeScrolled ? 'bg-white text-gray-900 border border-gray-200 shadow-sm' : 'bg-white/10 text-white'}`}
+          >
+            {mobileOpen ? "Close" : "Menu"}
+          </button>
         </div>
       </div>
 
