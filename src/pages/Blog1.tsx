@@ -33,7 +33,7 @@ export default function Blog1() {
                 src={image33}
                 alt="article"
                 loading="lazy"
-                className="w-full h-48 sm:h-64 md:h-72 lg:h-80 object-cover rounded-lg mb-6"
+                className="w-full h-auto sm:h-64 md:h-72 lg:h-80 object-cover rounded-lg mb-6"
               />
 
               <div className="prose prose-lg text-gray-800">

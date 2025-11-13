@@ -449,14 +449,14 @@ export default function AboutUs() {
 
 
 
-          <p className="text-white mx-auto mb-12" style={{ fontFamily: 'Lato, sans-serif', fontWeight: 400, fontStyle: 'normal', fontSize: '22px', lineHeight: '28px', letterSpacing: '-2%', textAlign: 'center', maxWidth: '680px' }}>
-
-            Born from a vision of weaving wellness, adventure, and purpose into everyday living, Traveon is more than a retreat planner — we’re architects of transformation.<br /><br />
-
-            We draw inspiration from alchemy of ancient wisdom and modern wellness science. From meditation practices taught by elders, to evidence-backed techniques for mental clarity, every facet of our retreats is crafted with deep intention.<br /><br />
-
+          <p className="text-white mx-auto mb-12 px-4 sm:px-0 text-base sm:text-lg md:text-xl leading-relaxed sm:leading-7" style={{ fontFamily: 'Lato, sans-serif', fontWeight: 400, fontStyle: 'normal', letterSpacing: '-2%', textAlign: 'center', maxWidth: '680px' }}>
+            Born from a vision of weaving wellness, adventure, and purpose into everyday living, Traveon is more than a retreat planner — we’re architects of transformation.
+            <br />
+            <br />
+            We draw inspiration from alchemy of ancient wisdom and modern wellness science. From meditation practices taught by elders, to evidence-backed techniques for mental clarity, every facet of our retreats is crafted with deep intention.
+            <br />
+            <br />
             We are guides, facilitators, companions — walking alongside those who come to us carrying stress, burnout, or simply a longing for more meaning. And when they leave, we hope they carry away calm, clarity, and a renewed sense of possibility.
-
           </p>
 
 
@@ -792,14 +792,14 @@ export default function AboutUs() {
               </p>
             </div>
             <div className="flex justify-center md:justify-end md:-mr-8 lg:-mr-12">
-              <img src={about1} alt="Our mission" className="about-blob about-blob-left pointer-events-none transform md:translate-x-12 lg:translate-x-20 w-full max-w-md md:max-w-2xl lg:max-w-[1000px] rounded-lg object-cover shadow-lg" />
+              <img src={about1} alt="Our mission" className="about-blob about-blob-left pointer-events-none transform md:translate-x-12 lg:translate-x-20 w-full max-w-md md:max-w-2xl lg:max-w-[1000px] rounded-lg h-auto object-contain md:object-cover shadow-lg mx-auto" />
             </div>
           </div>
 
           {/* Vision: image left, text right on md+ */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center mt-12">
             <div className="flex justify-center md:justify-start md:-ml-8 lg:-ml-12">
-              <img src={about2} alt="Our vision" className="about-blob about-blob-right pointer-events-none transform md:-translate-x-12 lg:-translate-x-20 w-full max-w-md md:max-w-2xl lg:max-w-[1000px] rounded-lg object-cover shadow-lg" />
+              <img src={about2} alt="Our vision" className="about-blob about-blob-right pointer-events-none transform md:-translate-x-12 lg:-translate-x-20 w-full max-w-md md:max-w-2xl lg:max-w-[1000px] rounded-lg h-auto object-contain md:object-cover shadow-lg mx-auto" />
             </div>
             <div className="text-center md:text-left">
               <h3 className="text-3xl md:text-4xl font-semibold bg-clip-text text-transparent bg-gradient-to-r from-[#00C5C5] to-[#009F26] mx-auto md:mx-0" style={{ fontFamily: 'Cormorant, serif', fontWeight: 700, fontStyle: 'italic', fontSize: '42px', lineHeight: '42px', letterSpacing: '-5%', textAlign: 'center' }}>
