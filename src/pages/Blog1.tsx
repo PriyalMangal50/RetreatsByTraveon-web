@@ -29,7 +29,12 @@ export default function Blog1() {
             {/* Middle column - 50% */}
             <main className="col-span-12 lg:col-span-6">
               <h1 className="text-2xl font-semibold text-black mb-4">Born from a vision of weaving wellness, adventure, and purpose into everyday living</h1>
-              <img src={image33} alt="article" className="w-full h-64 object-cover rounded-lg mb-6" />
+              <img
+                src={image33}
+                alt="article"
+                loading="lazy"
+                className="w-full h-48 sm:h-64 md:h-72 lg:h-80 object-cover rounded-lg mb-6"
+              />
 
               <div className="prose prose-lg text-gray-800">
                 <p>We draw inspiration from alchemy of ancient wisdom and modern wellness science. From meditation practices taught by elders, to evidence-backed techniques for mental clarity, every facet of our retreats is crafted with deep intention.</p>

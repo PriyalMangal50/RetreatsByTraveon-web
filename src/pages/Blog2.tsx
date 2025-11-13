@@ -20,7 +20,9 @@ export default function Blog2() {
       <section className="w-full relative bg-[#B3E4BF]">
   <div className="max-w-7xl mx-auto px-6 pt-20 pb-12 md:pt-28">
           <div>
-            <h2 className="text-2xl font-bold text-black mb-6">Featured Blogs</h2>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-black mt-4 sm:mt-6 mb-6 text-center sm:text-left leading-tight max-w-2xl mx-auto sm:mx-0">
+              Featured Blogs
+            </h2>
 
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6 w-full">
               <div className="w-full">
