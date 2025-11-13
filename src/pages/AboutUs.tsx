@@ -11,21 +11,11 @@ import Footer from '../components/Footer';
 import { images } from '../assets';
 import { ArrowRight } from 'lucide-react';
 import b6 from '../assets/images/b6.jpg';
-import program23 from '../assets/images/program23.png';
-
-import program24 from '../assets/images/program24.png';
-
-
-
 import a1 from '../assets/images/a1.jpg';
 import a2 from '../assets/images/a2.jpg';
 import a3 from '../assets/images/a3.png';
 import a4 from '../assets/images/a4.jpg';
-import image21 from '../assets/images/image21.png';
-
-import image23 from '../assets/images/image23.png';
-
-import image24 from '../assets/images/image24.png';
+// image23 removed (unused)
 
 import about1 from '../assets/images/about1.jpg';
 
@@ -62,8 +52,6 @@ export default function AboutUs() {
       <SharedBackground />
 
       <Navbar />
-
-
 
       {/* Use the shared site Hero so About page matches Home, but replace the badge text with "About Us" */}
 
@@ -123,13 +111,14 @@ export default function AboutUs() {
 
             <style>{`.about-hero .inline-flex.items-center.gap-3{display:none !important} .about-hero .absolute.bottom-0{display:none !important}`}</style>
 
+
             <Hero
 
             showBadge={false}
 
             titleOverride={(
 
-              <span style={{ display: 'inline-block', marginTop: '-80px' }}>
+              <span style={{ display: 'inline-block', marginTop: '-112px' }}>
 
               <span className="about-title" style={{
 
@@ -138,6 +127,7 @@ export default function AboutUs() {
                   fontWeight: 700,
 
                   fontStyle: 'italic',
+                  fontSize: '50px',
 
                   lineHeight: '48px',
 
@@ -169,7 +159,7 @@ export default function AboutUs() {
 
                 fontStyle: 'normal',
 
-                fontSize: '36px',
+                fontSize: '40px',
 
                 lineHeight: '48px',
 
@@ -199,13 +189,13 @@ export default function AboutUs() {
 
               fontSize: '18px',
 
-              lineHeight: '24px',
+              lineHeight: '28px',
 
               letterSpacing: '-4%',
 
               display: 'block',
 
-              marginTop: '-28px',
+              marginTop: '-2px',
 
               textAlign: 'center',
 
@@ -434,17 +424,19 @@ export default function AboutUs() {
 
         </div>
 
-        <div className="relative max-w-7xl mx-auto px-6 text-center">
+  <div className="relative max-w-7xl mx-auto px-6 text-center z-10">
 
           <h2 className="text-white mb-8" style={{ fontFamily: 'Cormorant', fontWeight: 300, fontStyle: 'Light', fontSize: '48px', lineHeight: '54px', letterSpacing: '-8%', textAlign: 'center' }}>
 
-            —— Who We Are ——
+            <span style={{ fontFamily: 'Lato, sans-serif', fontWeight: 700, fontStyle: 'normal', fontSize: '48px', lineHeight: '54px', letterSpacing: '-3%' }}>—— Who </span>
+            <span style={{ fontFamily: 'Cormorant, serif', fontWeight: 700, fontStyle: 'italic', fontSize: '56px', lineHeight: '54px', letterSpacing: '-5%' }}>We</span>
+            <span style={{ fontFamily: 'Lato, sans-serif', fontWeight: 700, fontStyle: 'normal', fontSize: '48px', lineHeight: '54px', letterSpacing: '-3%' }}> Are ——</span>
 
           </h2>
 
 
 
-          <p className="text-white mx-auto mb-12" style={{ fontFamily: 'Lato', fontWeight: 400, fontStyle: 'Regular', fontSize: '22px', lineHeight: '28px', letterSpacing: '-2%', textAlign: 'center', maxWidth: '680px' }}>
+          <p className="text-white mx-auto mb-12" style={{ fontFamily: 'Lato, sans-serif', fontWeight: 400, fontStyle: 'normal', fontSize: '22px', lineHeight: '28px', letterSpacing: '-2%', textAlign: 'center', maxWidth: '680px' }}>
 
             Born from a vision of weaving wellness, adventure, and purpose into everyday living, Traveon is more than a retreat planner — we’re architects of transformation.<br /><br />
 
@@ -457,7 +449,7 @@ export default function AboutUs() {
 
 
           {/* Left Image Stack (visible on md+, hidden on small screens) */}
-          <div className="hidden md:block absolute left-0 bottom-4 transform md:-translate-x-16 md:translate-y-8 lg:-translate-x-28 lg:translate-y-14 xl:-translate-x-36 2xl:-translate-x-44">
+          <div className="hidden lg:block absolute left-0 bottom-4 transform lg:-translate-x-28 lg:translate-y-14 xl:-translate-x-36 2xl:-translate-x-44 z-0 pointer-events-none">
             <div className="relative w-64 h-64 md:w-72 md:h-72 lg:w-80 lg:h-80">
               <img src={a4} alt="Image 21" className="absolute w-48 h-48 md:w-56 md:h-56 lg:w-64 lg:h-64 object-cover rounded-lg transform rotate-6" />
               <img src={a3} alt="Image 23" className="absolute w-40 h-40 md:w-48 md:h-48 lg:w-56 lg:h-56 object-cover rounded-lg transform rotate-6 -top-12 left-20 md:-top-16 md:left-24 lg:-top-20 lg:left-28" />
@@ -469,7 +461,7 @@ export default function AboutUs() {
 
 
           {/* Right Image Stack (visible on md+, hidden on small screens) */}
-          <div className="hidden md:block absolute right-0 bottom-4 transform md:translate-x-16 md:translate-y-8 lg:translate-x-28 lg:translate-y-14 xl:translate-x-36 2xl:translate-x-44">
+          <div className="hidden lg:block absolute right-0 bottom-4 transform lg:translate-x-28 lg:translate-y-14 xl:translate-x-36 2xl:translate-x-44 z-0 pointer-events-none">
             <div className="relative w-64 h-64 md:w-72 md:h-72 lg:w-80 lg:h-80">
               <img src={a2} alt="Image 31" className="absolute w-48 h-48 md:w-56 md:h-56 lg:w-64 lg:h-64 object-cover rounded-lg transform -rotate-6" />
               <img src={b8} alt="Program 23" className="absolute w-40 h-40 md:w-48 md:h-48 lg:w-56 lg:h-56 object-cover rounded-lg transform rotate-6 -top-16 right-8" />
@@ -514,7 +506,7 @@ export default function AboutUs() {
 
         {/* absolute side images (visible on md+) placed at the extreme left/right */}
 
-  <div className="hidden md:block absolute left-0 top-1/2 transform -translate-y-1/2 -translate-x-6 md:-translate-x-8 lg:-translate-x-12 xl:-translate-x-16" style={{ top: '62%' }}>
+  <div className="hidden lg:block absolute left-0 top-1/2 transform -translate-y-1/2 -translate-x-6 lg:-translate-x-12 xl:-translate-x-16 z-0" style={{ top: '62%' }}>
 
           {/* organic-shaped left image (decorative) */}
 
@@ -538,7 +530,7 @@ export default function AboutUs() {
 
         </div>
 
-  <div className="hidden md:block absolute right-0 top-1/2 transform -translate-y-1/2 translate-x-6 md:translate-x-8 lg:translate-x-12 xl:translate-x-16" style={{ top: '62%' }}>
+  <div className="hidden lg:block absolute right-0 top-1/2 transform -translate-y-1/2 translate-x-6 lg:translate-x-12 xl:translate-x-16 z-0" style={{ top: '62%' }}>
 
           {/* organic-shaped right image */}
 
@@ -548,7 +540,7 @@ export default function AboutUs() {
 
 
 
-        <div className="max-w-7xl mx-auto px-6 py-12">
+  <div className="max-w-7xl mx-auto px-6 py-12 relative z-10">
 
           <div className="flex items-start justify-center">
 
@@ -943,7 +935,7 @@ export default function AboutUs() {
       </section>
  */}
  {/* Meet Our Team - green background with curved top */}
-      <section className="w-full relative bg-[#00502F] text-white overflow-hidden py-16">
+  <section className="w-full relative bg-[#00502F] text-white overflow-hidden py-10 sm:py-16">
         {/* curved top divider (white) */}
         <div className="absolute top-0 left-0 w-full" aria-hidden>
           <svg viewBox="0 0 1440 80" preserveAspectRatio="none" className="w-full h-20">
@@ -952,20 +944,56 @@ export default function AboutUs() {
         </div>
 
         <div className="relative max-w-7xl mx-auto px-6 pt-10">
-          <h2 className="text-3xl md:text-4xl font-semibold mb-4 text-center mx-auto" style={{ fontFamily: 'Cormorant, serif' }}>
+          <h2 className="text-3xl md:text-4xl font-semibold mb-4 text-center mx-auto" style={{ fontFamily: 'Lato, sans-serif' }}>
             Meet Our Team
           </h2>
 
-          <p className="text-white/90 max-w-3xl mx-auto text-center mb-8" style={{ fontFamily: 'Archivo, serif' }}>
+          <p className="text-white/90 max-w-3xl mx-auto text-center mb-8" style={{ fontFamily: 'Lato, sans-serif' }}>
             A multidisciplinary leadership team combining travel, wellness and experience-design expertise. We craft thoughtful retreats and experiences that bring people together.
           </p>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-            {[{img: team1, name: 'Dr. Piyush Bhardwaj', role: 'Director'}, {img: image31, name: 'Mr. Abhineet Gupta', role: 'Strategy'}, {img: image24, name: 'Program Lead', role: 'Experiences'}].map((m, idx) => (
-              <div key={idx} className="bg-transparent p-4 rounded-lg flex flex-col items-center text-center">
-                <img src={m.img} alt={m.name} className="w-40 h-40 md:w-48 md:h-48 object-cover rounded-lg mb-4" />
-                <h4 className="font-semibold text-white" style={{ fontFamily: 'Lato, sans-serif' }}>{m.name}</h4>
-                <p className="text-white/80 mt-1" style={{ fontFamily: 'Archivo, serif' }}>{m.role}</p>
+          {/* Two image+content blocks side-by-side (Image content  Image content) */}
+          <div className="max-w-5xl mx-auto mb-8 px-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
+              <div className="flex flex-col md:flex-row items-start gap-4">
+                <img src={team1} alt="Dr. Piyush Bhardwaj" className="w-36 h-36 md:w-48 md:h-48 object-cover rounded-lg mx-auto md:mx-0" />
+                <div className="text-center md:text-left">
+                  <h4 className="text-white font-semibold" style={{ fontFamily: 'Lato, sans-serif' }}>Dr. Piyush Bhardwaj</h4>
+                  <p className="text-white/90 mt-2 text-sm md:text-base" style={{ fontFamily: 'Lato, sans-serif' }}>With 15 years of experience in technology, data science and academic research, Dr. Piyush brings expertise in building data-driven engagement platforms and program design.</p>
+                </div>
+              </div>
+
+              <div className="flex flex-col md:flex-row items-start gap-4">
+                <img src={team1} alt="Mr. Abhineet Gupta" className="w-36 h-36 md:w-48 md:h-48 object-cover rounded-lg mx-auto md:mx-0" />
+                <div className="text-center md:text-left">
+                  <h4 className="text-white font-semibold" style={{ fontFamily: 'Lato, sans-serif' }}>Mr. Abhineet Gupta</h4>
+                  <p className="text-white/90 mt-2 text-sm md:text-base" style={{ fontFamily: 'Lato, sans-serif' }}>A seasoned business strategist with 14 years of experience across travel and hospitality, Abhineet leads commercial strategy and partnerships.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* centered horizontal white line (not touching edges) */}
+          <div className="mt-10 flex justify-center">
+            <div className="w-11/12 sm:w-3/4 md:w-2/3 lg:w-1/2 border-t border-white/60" />
+          </div>
+
+          {/* Six team cards: 3 per row on md+; each card shows image at left and name/post at right */}
+          <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 px-4">
+            {[
+              { img: team1, name: 'Dr. Piyush Bhardwaj', role: 'Director of Experiences' },
+              { img: team1, name: 'Mr. Abhineet Gupta', role: 'Strategy & Partnerships' },
+              { img: team1, name: 'Priya Sharma', role: 'Program Lead' },
+              { img: team1, name: 'Rohit Verma', role: 'Community Manager' },
+              { img: team1, name: 'Sneha Kapoor', role: 'Operations Head' },
+              { img: team1, name: 'Anita Rao', role: 'Experience Designer' },
+            ].map((card, idx) => (
+              <div key={idx} className="flex flex-col sm:flex-row items-center sm:items-center gap-4 bg-transparent p-2">
+                <img src={card.img} alt={`card-${idx}`} className="w-24 h-24 sm:w-20 sm:h-20 md:w-24 md:h-24 object-cover rounded-md mx-auto sm:mx-0" />
+                <div className="text-center sm:text-left">
+                  <h5 className="text-white font-semibold" style={{ fontFamily: 'Lato, sans-serif' }}>{card.name}</h5>
+                  <p className="text-white/80 text-sm" style={{ fontFamily: 'Lato, sans-serif' }}>{card.role}</p>
+                </div>
               </div>
             ))}
           </div>

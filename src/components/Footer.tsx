@@ -27,10 +27,10 @@ export default function Footer() {
     <footer className="flex flex-col items-center w-full bg-white">
       <div className="flex flex-col max-w-[1200px] items-start w-full px-6 py-10">
         <div className="flex flex-col md:flex-row items-start gap-12 w-full">
-          <div className="flex flex-col w-full md:w-[340px] items-start gap-[15px]">
-            <img className="w-[120px] h-[120px] object-cover" alt="Retreats by Traveon Logo" src={images.logo} />
+          <div className="flex flex-col w-full md:w-[340px] items-center md:items-start gap-[15px]">
+            <img className="w-16 h-16 sm:w-20 sm:h-20 md:w-28 md:h-28 object-contain mx-auto" alt="Retreats by Traveon Logo" src={images.logo} />
 
-            <p className="font-light text-[#697a75] text-base leading-[22px]">
+            <p className="font-light text-[#697a75] text-base leading-[22px] text-center md:text-left">
               Creating transformative experiences through immersive wellness retreats, inspiring corporate offsites,
               & meaningful cultural journeys across India, Oman, and Seychelles.
             </p>
