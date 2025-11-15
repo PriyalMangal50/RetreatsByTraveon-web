@@ -50,7 +50,7 @@ export default function Testimonials() {
         </div>
 
   {/* Header Section */}
-  <div className="text-center mt-6 mb-2">
+  <div className="text-center mt-8 mb-1">
           <h2 className="text-4xl font-semibold text-gray-900 leading-tight">
             Heartfelt {" "}
             <span className="font-serif italic text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-green-600">Words</span> {" "}
@@ -58,31 +58,30 @@ export default function Testimonials() {
             <span className="font-serif italic text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-green-600">Happy</span> {" "}
             Guests
           </h2>
-          <p className="text-gray-600 text-lg mt-2">
-            Real experiences from guests who found renewal, teams that discovered synergy,<br />
-            and travelers who connected with purpose.
+          <p className="text-gray-600 text-base mt-1 max-w-2xl mx-auto">
+            Real experiences from guests who found renewal, teams that discovered synergy, and travelers who connected with purpose.
           </p>
         </div>
 
   {/* Scroll Section */}
-  <div className="mt-2">
+  <div className="mt-0">
           <div className="max-w-7xl mx-auto">
-            <div className="flex flex-col min-h-[560px] relative">
+            <div className="flex flex-col min-h-[900px] relative">
 
               {/* Top Half (white background) */}
-              <div className="h-36 bg-white flex items-center justify-center"></div>
+              <div className="flex-1 bg-white flex items-center justify-center"></div>
 
               {/* Floating Cards Section */}
-              <div className="absolute left-1/2 top-28 z-20 w-full -translate-x-1/2">
+              <div className="absolute left-1/2 top-1/2 z-20 w-full -translate-x-1/2 -translate-y-1/2">
                 <div className="max-w-7xl mx-auto px-4">
                   <div className="overflow-visible">
-                    <div className="flex items-stretch gap-6 animate-scroll-testimonials w-max">
+                    <div className="flex items-stretch gap-12 animate-scroll-testimonials w-max">
                       {loopCards.map((c, i) => (
                         <div
                           key={i}
-                          className="w-56 flex-shrink-0 bg-white border border-gray-200 rounded-xl p-4 text-center shadow-lg"
+                          className="w-60 flex-shrink-0 bg-white border border-gray-200 rounded-xl p-5 text-center shadow-lg"
                         >
-                          <img src={c.img} alt={c.name} className="w-12 h-12 mx-auto rounded-full object-cover" />
+                          <img src={c.img} alt={c.name} className="w-14 h-14 mx-auto rounded-full object-cover" />
                           <h4 className="mt-3 font-semibold text-gray-800">{c.name}</h4>
                           <p className="text-sm text-gray-500">{c.title}</p>
                           <div className="mt-3 text-yellow-400">★★★★★</div>
