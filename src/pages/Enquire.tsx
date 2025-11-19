@@ -26,12 +26,7 @@ export default function Enquire() {
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4 min-w-0">
                       <div>
                         <label className="block text-sm text-gray-600">Tour Start Date</label>
-                        <div className="relative">
-                          <input type="date" className="mt-1 w-full min-w-0 border rounded px-3 py-2 pr-10" />
-                          <svg className="pointer-events-none absolute inset-y-0 right-3 h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M8 7V3m8 4V3M3 11h18M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                          </svg>
-                        </div>
+                        <input type="date" className="mt-1 w-full min-w-0 border rounded px-3 py-2" />
                       </div>
                       <div>
                         <label className="block text-sm text-gray-600">Number of Adults</label>
