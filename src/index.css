@@ -39,3 +39,31 @@
 .arc-rotate img {
 	will-change: transform;
 }
+
+/* Hide native date picker indicator so only our custom SVG is visible
+	 (helps avoid duplicated / blurred icons on WebKit browsers). */
+input[type="date"]::-webkit-calendar-picker-indicator {
+	display: none;
+	-webkit-appearance: none;
+	opacity: 0;
+	pointer-events: none;
+}
+
+/* Fallback for other engines if needed */
+input[type="date"]::-moz-focus-inner {
+	border: 0;
+}
+
+/* Hide native date picker indicator so only our custom SVG is visible
+	 (helps avoid duplicated / blurred icons on some mobile browsers). */
+input[type="date"]::-webkit-calendar-picker-indicator {
+	display: none;
+	-webkit-appearance: none;
+	opacity: 0;
+	pointer-events: none;
+}
+
+/* Firefox (fallback) */
+input[type="date"]::-moz-focus-inner {
+	border: 0;
+}

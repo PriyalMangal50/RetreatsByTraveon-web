@@ -50,7 +50,7 @@ export default function Testimonials() {
         </div>
 
   {/* Header Section */}
-  <div className="text-center mt-8 mb-1">
+  <div className="text-center mt-12 mb-2">
           <h2 className="text-4xl font-semibold text-gray-900 leading-tight">
             Heartfelt {" "}
             <span className="font-serif italic text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-green-600">Words</span> {" "}
@@ -58,13 +58,14 @@ export default function Testimonials() {
             <span className="font-serif italic text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-green-600">Happy</span> {" "}
             Guests
           </h2>
-          <p className="text-gray-600 text-base mt-1 max-w-2xl mx-auto">
-            Real experiences from guests who found renewal, teams that discovered synergy, and travelers who connected with purpose.
+          <p className="text-gray-600 text-lg mt-2">
+            Real experiences from guests who found renewal, teams that discovered synergy,<br />
+            and travelers who connected with purpose.
           </p>
         </div>
 
   {/* Scroll Section */}
-  <div className="mt-0">
+  <div className="mt-2">
           <div className="max-w-7xl mx-auto">
             <div className="flex flex-col min-h-[900px] relative">
 
