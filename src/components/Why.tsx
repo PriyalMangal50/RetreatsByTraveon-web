@@ -45,10 +45,10 @@ export default function Why() {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-4 md:px-8">
           {items.map((it, i) => (
-            <div
-              key={i}
-              className="flex flex-col items-center bg-white shadow-md rounded-lg p-6 hover:shadow-lg transition-shadow"
-            >
+              <div
+                key={i}
+                className="flex flex-col items-center bg-[#DBF3E0] shadow-md rounded-lg p-6 hover:shadow-lg transition-shadow"
+              >
               <img src={it.img} alt={it.title} style={{ maxWidth: '100%', maxHeight: '100%', objectFit: 'cover', borderRadius: 8 }} />
               <h3 className="text-xl font-semibold mb-2 text-center">{it.title}</h3>
               <p className="text-gray-600 text-center">{it.desc}</p>
